@@ -10,9 +10,9 @@ ENV NEXUS_REPOS /repositories
 RUN cd /var/tmp \
   && curl --fail --silent --location --retry 3 -O \
   --header "Cookie: oraclelicense=accept-securebackup-cookie; " \
-  http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.rpm \
-  && rpm -Ui jdk-8u101-linux-x64.rpm \
-  && rm -rf jdk-8u101-linux-x64.rpm
+  http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.rpm \
+  && rpm -Ui jdk-8u171-linux-x64.rpm \
+  && rm -rf jdk-8u171-linux-x64.rpm
 
 # Install jq
 RUN curl --fail --silent --location --retry 3 \
